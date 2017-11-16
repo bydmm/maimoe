@@ -4,7 +4,7 @@ from fabric.contrib.console import confirm
 env.hosts = ['root@47.52.235.110']
 
 def push():
-    local("git add -p && git commit")
+    local("git add . && git commit")
     local("git push")
 
 def deploy():

@@ -8,8 +8,26 @@
         background: url('bg.jpg') no-repeat center center fixed;
         background-size: cover;
       }
+      .aplayer {
+        width: 500px;
+        background-color: rgba(255,255,255,0.8);
+      }
     </style>
   </head>
   <body>
+    <div id="aplayer1" class="aplayer"></div>
+    <script type="text/javascript" src="player.min.js"></script>
+    <script type="text/javascript">
+    var ap = new APlayer({
+      element: document.getElementById('aplayer1'),
+      music: {
+          title: '初音ミク,livetune,東京フィルハーモニー交響楽団 - Tell Your World',
+          author: 'Google Chrome',
+          url: 'miku.mp3',
+          autoplay: true,
+          theme: '#e6d0b2',
+      }
+    });
+    </script>
   </body>
 </html>
